@@ -8,7 +8,7 @@ class School
   end
   
   def add_student(name, grade)
-    @roster[grade] ||= []
+    @roster[grade] ||= []     # if the key doesn't exist, set the key = to grade
     @roster[grade] << name
   end
   
